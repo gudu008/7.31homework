@@ -1,0 +1,333 @@
+*{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑",Helvetica,Arial,Verdana,sans-serif;
+}
+.header{
+    margin: 0 auto;
+    height: 82px;
+    width: 100%;
+    /*border:1px solid red;*/
+}
+.header-img{
+    float: left;
+    height: 58px;
+    margin-left: 50px;
+    margin-top: 12px;
+}
+.nav{
+    float: left;
+    width: 710px;
+    height: 100%;
+    /*border: 1px solid black;*/
+    margin-left: 70px;
+}
+.nav li{
+    float: left;
+    color: #bcbcbc;
+    font-size: 14px;
+    text-align: center;
+    padding: 32px;
+}
+.nav li:nth-child(1){
+    margin-left: 70px;
+}
+.Search{
+    float: left;
+    width: 282px;
+    height: 32px;
+    border: 1px solid #3ec9ad;
+    margin: 25px 25px;
+}
+.Search input[type=text]{
+    float: left;
+    width: 200px;
+    height: 85%;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    color: #7a7a7a;
+}
+.Search-img{
+    float: left;
+    height: 100%;
+    width: 62px;
+    background: #3ec9ad;
+}
+.Search-img img{
+    height: 100%;
+    margin-left: 15px;
+}
+
+.banner{
+    float: left;
+    width: 100%;
+    height: 661px;
+    /*border: 1px solid red;*/
+    position: relative;
+}
+.banner img{
+    float: left;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.banner img:first-child{
+    z-index: 1;
+}
+.banner img:last-child{
+    z-index: 2;
+}
+.Renovation-Process{
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+}
+.Renovation-Process-nav{
+    float: left;
+    margin: 50px auto;
+    width: 100%;
+    height: 66px;
+    /*border: 1px solid black;*/
+}
+.Renovation-Process-nav span:nth-child(1){
+    font-size: 26px;
+    margin-left: 623px;
+    color: #333333;
+}
+.Renovation-Process-nav span:last-child{
+    font-size: 13px;
+    margin-left: 539px;
+    margin-bottom: 0;
+    color: #bababa;
+}
+.Renovation-Process-body{
+    width: 1240px;
+    height: 145px;
+    margin: 20px auto;
+    /*border: 1px solid black;*/
+}
+.Renovation-Process-body div{
+    float: left;
+    height: 100%;
+    width: 176px;
+    border:1px solid #8d9095;
+    margin-left: 26px;
+}
+.Renovation-Process-body div img{
+    width: 32px;
+    margin-top: 40px;
+    margin-left: 72px;
+}
+.Renovation-Process-body div span{
+    font-size: 14px;
+    color: #808080;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.Renovation-case{
+    width: 1300px;
+    height: 1300px;
+    margin: 100px auto;
+    /*border: 1px solid red;*/
+}
+.Renovation-case-box{
+    box-shadow: 0 0 20px #cccccc;
+    float: left;
+    width: 360px;
+    height: 488px;
+    /*border: 1px solid black;*/
+    margin-left: 32px;
+    margin-top: 30px;
+    padding: 15px;
+}
+.Renovation-case-box img{
+    width: 100%;
+    height: 248px;
+}
+.Renovation-case-box span{
+    color: #999999;
+}
+.Renovation-case-box hr{
+    background-color: red;
+}
+.Renovation-case-box div{
+    width: 100%;
+    height: 64px;
+    /*border: 1px solid black;*/
+    margin-top: 32px;
+    font-size: 12px;
+    color: #ff9191;
+    text-align: center;
+    line-height: 64px;
+}
+.Renovation-case-footer{
+    float: left;
+    width: 192px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #bcbcbc;
+    color: #bcbcbc;
+    font-size: 14px;
+    margin-left: 553px;
+    margin-top: 40px;
+}
+.Decoration-information{
+    width: 100%;
+    height: 753px;
+    background: #f4f4f4;
+    padding-top: 50px;
+}
+.Renovation-Case{
+    width: 100%;
+    height: 745px;
+}
+.Renovation-Case img{
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+    width: 281px;
+    height: 210px;
+}
+.Renovation-Case img:nth-of-type(1){
+    margin-left: 97px;
+}
+.Renovation-Case img:nth-of-type(5){
+    margin-left: 97px;
+}
+.Team{
+    width: 100%;
+    height: 587px;
+    background: #f7f7f7;
+    float: left;
+}
+.Team-box{
+    width: 190px;
+    height: 407px;
+    padding: 0 5px;
+    /*border: 1px solid red;*/
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    background: #f4f4f4;
+}
+.Team-box div{
+    width: 100%;
+    height: 33px;
+    text-align: center;
+}
+.Team-box div:last-child{
+    background: #3ec9ad;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 46px;
+    height: 46px;
+}
+.Team-box img{
+    width: 100%;
+}
+.Commentary{
+    width: 100%;
+    height: 650px;
+    float: left;
+}
+.Commentary-box{
+    width: 1280px;
+    height: 482px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+}
+.Commentary-list{
+    float: left;
+    width: 780px;
+    height: 100%;
+    /*border: 1px solid red;*/
+}
+.Commentary-list img{
+    width: 62px;
+    float: left;
+    margin-top: 30px;
+}
+.Commentary-list0{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 700px;
+    float: left;
+    font-size: 12px;
+    line-height: 31px;
+}
+.Commentary-test{
+    float: left;
+    width: 390px;
+    height: 370px;
+    /*border: 1px solid black;*/
+    margin-left: 55px;
+    margin-top: 56px;
+    background: rgba(137,17,137,0.1);
+}
+.Commentary-test div{
+    width: 100%;
+    height: 57px;
+    background: #3ec9ad;
+    line-height: 57px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.Commentary-test input{
+    background: #dedede;
+    padding: 5px;
+    width: 343px;
+    height: 34px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+.Commentary-test button{
+    width: 148px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    color: #fff;
+    background: #3ec9ad;
+    border: none;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.Co-branding{
+    float: left;
+    width: 100%;
+    height: 323px;
+    background: #f7f7f7;
+    /*border: 1px solid red;*/
+}
+.Co-branding-box{
+    float: left;
+    width: 991px;
+    height: 132px;
+    /*border: 1px solid black;*/
+    margin-left: 175px;
+    margin-top: 20px;
+}
+.Co-branding-box img{
+    width: 114px;
+    margin-left: 44px;
+}
+.footer{
+    width: 100%;
+    height: 140px;
+    background: #c1c1c1;
+    float: left;
+}
+.footer div{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #808080;
+    text-align: center;
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="MyStyle.css">
+    <script src="MyJs.js"></script>
+</head>
+<body>
+<!--导航栏开始-->
+    <div class="header">
+        <img src="imgs/head.png" class="header-img">
+        <div class="nav">
+            <ul>
+                <li><a>首页</a></li>
+                <li><a>效果图</a></li>
+                <li><a>样板案例</a></li>
+                <li><a>装修知识</a></li>
+                <li><a>关于我们</a></li>
+            </ul>
+        </div>
+        <div class="Search">
+            <input type="text" value="搜索关键字">
+            <div class="Search-img">
+                <img src="imgs/search.png">
+            </div>
+        </div>
+    </div>
+<!--导航栏结束-->
+
+    <div class="banner">
+        <img src="imgs/banner%20(1).jpg" class="banner-img" style="z-index: 1">
+        <img src="imgs/banner%20(2).jpg" class="banner-img" style="z-index: 2">
+    </div>
+<script>
+    var bannerImg=document.querySelectorAll(".banner-img");
+    console.log(bannerImg.length);
+    console.log(typeof bannerImg[0].style.zIndex);
+    setInterval(function () {
+        bannerImg[0].style.zIndex=1+parseInt(bannerImg[0].style.zIndex);
+    },1000)
+    setInterval(function () {
+        bannerImg[1].style.zIndex=3+parseInt(bannerImg[1].style.zIndex);
+    },3000)
+
+</script>
+    <div class="Renovation-Process">
+        <div class="Renovation-Process-nav">
+            <span>装修流程</span><br>
+            <span>业主权益第一，我们始终保障着业主装修每一步</span>
+        </div>
+        <div class="Renovation-Process-body" onmouseover="RenovationProcess()">
+            <div class="RenovationProcessImg">
+                <img src="imgs/house.png"><br>
+                <span>收房量房</span>
+            </div>
+            <div class="RenovationProcessImg">
+                <img src="imgs/house.png"><br>
+                <span>设计阶段</span>
+            </div>
+            <div class="RenovationProcessImg">
+                <img src="imgs/house.png"><br>
+                <span>材料选购</span>
+            </div>
+            <div class="RenovationProcessImg">
+                <img src="imgs/house.png"><br>
+                <span>施工阶段</span>
+            </div>
+            <div class="RenovationProcessImg">
+                <img src="imgs/house.png"><br>
+                <span>竣工验收</span>
+            </div>
+            <div class="RenovationProcessImg">
+                <img src="imgs/house.png" class="RenovationProcessImg"><br>
+                <span>软装配饰</span>
+            </div>
+        </div>
+    </div>
+    <div class="Renovation-case">
+        <div class="Renovation-Process-nav">
+            <span>装修案例</span><br>
+            <span>我们累计共为1000位业主提供一站式的装修服务</span>
+        </div>
+        <div class="Renovation-case-box">
+            <img src="imgs/Renovation-Case%20(1).jpg">
+            <span style="font-size: 15px">案例展示#8</span><br>
+            <hr style="background-color:#ff9191;height: 1px;width:90%;border: none;"/>
+            <span style="font-size: 12px; line-height: 22px">【北欧家装】 180㎡北欧家装|某某小区</span><br>
+            <span style="font-size: 12px; line-height: 22px">项目地址： 江苏苏州</span><br>
+            <span style="font-size: 12px; line-height: 22px">项目面积： 1...</span>
+            <div>MORE</div>
+        </div>
+        <div class="Renovation-case-box">
+            <img src="imgs/Renovation-Case%20(2).jpg">
+            <span style="font-size: 15px">案例展示#7</span><br>
+            <hr style="background-color:#ff9191;height: 1px;width:90%;border: none;"/>
+            <span style="font-size: 12px; line-height: 22px">【北欧家装】 180㎡北欧家装|某某小区</span><br>
+            <span style="font-size: 12px; line-height: 22px">项目地址： 江苏苏州</span><br>
+            <span style="font-size: 12px; line-height: 22px">项目面积： 1...</span>
+            <div>MORE</div>
+        </div>
+        <div class="Renovation-case-box">
+            <img src="imgs/Renovation-Case%20(3).jpg">
+            <span style="font-size: 15px">案例展示#6</span><br>
+            <hr style="background-color:#ff9191;height: 1px;width:90%;border: none;"/>
+            <span style="font-size: 12px; line-height: 22px">【北欧家装】 180㎡北欧家装|某某小区</span><br>
+            <span style="font-size: 12px; line-height: 22px">项目地址： 江苏苏州</span><br>
+            <span style="font-size: 12px; line-height: 22px">项目面积： 1...</span>
+            <div>MORE</div>
+        </div>
+        <div class="Renovation-case-box">
+            <img src="imgs/Renovation-Case%20(4).jpg">
+            <span style="font-size: 15px">案例展示#5</span><br>
+            <hr style="background-color:#ff9191;height: 1px;width:90%;border: none;"/>
+            <span style="font-size: 12px; line-height: 22px">【北欧家装】 180㎡北欧家装|某某小区</span><br>
+            <span style="font-size: 12px; line-height: 22px">项目地址： 江苏苏州</span><br>
+            <span style="font-size: 12px; line-height: 22px">项目面积： 1...</span>
+            <div>MORE</div>
+        </div>
+        <div class="Renovation-case-box">
+            <img src="imgs/Renovation-Case%20(5).jpg">
+            <span style="font-size: 15px">案例展示#4</span><br>
+            <hr style="background-color:#ff9191;height: 1px;width:90%;border: none;"/>
+            <span style="font-size: 12px; line-height: 22px">【北欧家装】 180㎡北欧家装|某某小区</span><br>
+            <span style="font-size: 12px; line-height: 22px">项目地址： 江苏苏州</span><br>
+            <span style="font-size: 12px; line-height: 22px">项目面积： 1...</span>
+            <div>MORE</div>
+        </div>
+        <div class="Renovation-case-box">
+            <img src="imgs/Renovation-Case%20(6).jpg">
+            <span style="font-size: 15px">案例展示#3</span><br>
+            <hr style="background-color:#ff9191;height: 1px;width:90%;border: none;"/>
+            <span style="font-size: 12px; line-height: 22px">【北欧家装】 180㎡北欧家装|某某小区</span><br>
+            <span style="font-size: 12px; line-height: 22px">项目地址： 江苏苏州</span><br>
+            <span style="font-size: 12px; line-height: 22px">项目面积： 1...</span>
+            <div>MORE</div>
+        </div>
+        <div class="Renovation-case-footer">了解更多装修案例--></div>
+    </div>
+    <div class="Decoration-information">
+        <div class="Renovation-Process-nav">
+            <span>装修资讯</span><br>
+            <span style="margin-left: 562px">精选成功案例，快来看看我们装出的家</span>
+        </div>
+    </div>
+    <div class="Renovation-Case">
+        <div class="Renovation-Process-nav">
+            <span>装修案例</span><br>
+            <span style="margin-left: 583px">海量效果图为业主提供更多灵感</span>
+        </div>
+        <img src="imgs/Renovation-Case%20(1).jpg">
+        <img src="imgs/Renovation-Case%20(2).jpg">
+        <img src="imgs/Renovation-Case%20(3).jpg">
+        <img src="imgs/Renovation-Case%20(4).jpg">
+        <img src="imgs/Renovation-Case%20(5).jpg">
+        <img src="imgs/Renovation-Case%20(6).jpg">
+        <img src="imgs/Renovation-Case%20(7).jpg">
+        <img src="imgs/Renovation-Case%20(8).jpg">
+        <div class="Renovation-case-footer" style="margin-left: 577px">浏览更多效果图--></div>
+    </div>
+    <div class="Team">
+        <div class="Renovation-Process-nav">
+            <span>设计师团队</span><br>
+            <span>我们累计共为1000位业主提供一站式的装修服务</span>
+        </div>
+        <div class="Team-box" style="margin-left: 44px">
+            <img src="imgs/Team%20(1).webp">
+            <div><span style="font-size: 18px">张媛 &nbsp; </span><span style="font-size: 13px">优秀设计师</span></div>
+            <div style="font-size: 12px"><span>经验：</span><span style="color: #3ec9ad">8年&nbsp; </span><span>代表作：3件</span></div>
+            <div>查看TA的案例</div>
+        </div>
+        <div class="Team-box">
+            <img src="imgs/Team%20(2).webp">
+            <div><span style="font-size: 18px">张媛 &nbsp; </span><span style="font-size: 13px">优秀设计师</span></div>
+            <div style="font-size: 12px"><span>经验：</span><span style="color: #3ec9ad">8年&nbsp; </span><span>代表作：3件</span></div>
+            <div>查看TA的案例</div>
+        </div>
+        <div class="Team-box">
+            <img src="imgs/Team%20(3).webp">
+            <div><span style="font-size: 18px">张媛 &nbsp; </span><span style="font-size: 13px">优秀设计师</span></div>
+            <div style="font-size: 12px"><span>经验：</span><span style="color: #3ec9ad">8年&nbsp; </span><span>代表作：3件</span></div>
+            <div>查看TA的案例</div>
+        </div>
+        <div class="Team-box">
+            <img src="imgs/Team%20(4).webp">
+            <div><span style="font-size: 18px">张媛 &nbsp; </span><span style="font-size: 13px">优秀设计师</span></div>
+            <div style="font-size: 12px"><span>经验：</span><span style="color: #3ec9ad">8年&nbsp; </span><span>代表作：3件</span></div>
+            <div>查看TA的案例</div>
+        </div>
+        <div class="Team-box">
+            <img src="imgs/Team%20(5).webp">
+            <div><span style="font-size: 18px">张媛 &nbsp; </span><span style="font-size: 13px">优秀设计师</span></div>
+            <div style="font-size: 12px"><span>经验：</span><span style="color: #3ec9ad">8年&nbsp; </span><span>代表作：3件</span></div>
+            <div>查看TA的案例</div>
+        </div>
+        <div class="Team-box">
+            <img src="imgs/Team%20(6).webp">
+            <div><span style="font-size: 18px">张媛 &nbsp; </span><span style="font-size: 13px">优秀设计师</span></div>
+            <div style="font-size: 12px"><span>经验：</span><span style="color: #3ec9ad">8年&nbsp; </span><span>代表作：3件</span></div>
+            <div>查看TA的案例</div>
+        </div>
+    </div>
+    <div class="Commentary">
+        <div class="Renovation-Process-nav">
+            <span>业主评论</span><br>
+            <span>业主权益第一，我们始终保障着业主装修每一步</span>
+        </div>
+        <div class="Commentary-box">
+            <div class="Commentary-list">
+                <div><img src="imgs/Commentary.webp">
+                    <div class="Commentary-list0">业主AAA评论：双击这里或者点击编辑按钮修改文本内容，您可以添加图标按钮图片等常用元素，还可以为下方幽灵按钮添加相应的超链接；双击这里或者点击编辑按钮修改文本内容.</div>
+                </div>
+                <div><img src="imgs/Commentary.webp">
+                    <div class="Commentary-list0">业主AAA评论：双击这里或者点击编辑按钮修改文本内容，您可以添加图标按钮图片等常用元素，还可以为下方幽灵按钮添加相应的超链接；双击这里或者点击编辑按钮修改文本内容.</div>
+                </div>
+                <div><img src="imgs/Commentary.webp">
+                    <div class="Commentary-list0">业主AAA评论：双击这里或者点击编辑按钮修改文本内容，您可以添加图标按钮图片等常用元素，还可以为下方幽灵按钮添加相应的超链接；双击这里或者点击编辑按钮修改文本内容.</div>
+                </div>
+                <div><img src="imgs/Commentary.webp">
+                    <div class="Commentary-list0">业主AAA评论：双击这里或者点击编辑按钮修改文本内容，您可以添加图标按钮图片等常用元素，还可以为下方幽灵按钮添加相应的超链接；双击这里或者点击编辑按钮修改文本内容.</div>
+                </div>
+                <div><img src="imgs/Commentary.webp">
+                    <div class="Commentary-list0">业主AAA评论：双击这里或者点击编辑按钮修改文本内容，您可以添加图标按钮图片等常用元素，还可以为下方幽灵按钮添加相应的超链接；双击这里或者点击编辑按钮修改文本内容.</div>
+                </div>
+            </div>
+            <div class="Commentary-test">
+                <div>家装快速报价</div>
+                <input type="text" value="您的姓名">
+                <input type="text" value="联系方式">
+                <input type="text" value="房屋面积">
+                <button>免费获取装修报价</button>
+            </div>
+        </div>
+    </div>
+    <div class="Co-branding">
+        <div class="Renovation-Process-nav">
+            <span>合作品牌</span><br>
+            <span style="margin-left: 564px">众多优质品牌为业主提供高质建材支持</span>
+        </div>
+        <div class="Co-branding-box">
+            <img src="imgs/Co-branding%20(1).jpg">
+            <img src="imgs/Co-branding%20(2).jpg">
+            <img src="imgs/Co-branding%20(3).jpg">
+            <img src="imgs/Co-branding%20(4).jpg">
+            <img src="imgs/Co-branding%20(5).jpg">
+            <img src="imgs/Co-branding%20(6).jpg">
+            <img src="imgs/Co-branding%20(7).jpg">
+            <img src="imgs/Co-branding%20(8).jpg">
+            <img src="imgs/Co-branding%20(9).jpg">
+            <img src="imgs/Co-branding%20(10).jpg">
+            <img src="imgs/Co-branding%20(11).jpg">
+            <img src="imgs/Co-branding%20(12).jpg">
+        </div>
+    </div>
+    <div class="footer">
+        <div>Powered by QFY 版权所有 ©2010-2016</div><br>
+        <div>地址：江苏省苏州市工业园区金鸡湖大道00号</div><br>
+        <div>苏ICP备00010001号</div>
+    </div>
+</body>
+</html>
